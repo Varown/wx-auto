@@ -1,0 +1,32 @@
+{
+  "name": "miniprogram-auto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node start.js",
+    "pm2": "pm2 start start.js --name saas-auto",
+    "start": "pm2 start saas-auto",
+    "stop": "pm2 stop saas-auto",
+    "restart": "pm2 restart saas-auto",
+    "delete": "pm2 delete saas-auto"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-register": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "body-parser-xml": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "koa2-cors": "^2.0.6",
+    "miniprogram-ci": "1.2.3"
+  },
+  "devDependencies": {
+    "koa2-request": "^1.0.4",
+    "xmlreader": "^0.2.3"
+  }
+}
